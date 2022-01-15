@@ -10,9 +10,16 @@ router.get('/', function(req, res, next) {
   let params = {
     active: { home: true }
   };
-
+  res.locals.when2Meet = {};
   res.render('index', params);
 });
+
+// <PostEventFormSnippet>
+/* POST /index */
+router.post('/', function(req, res) {
+    
+});
+
 
 module.exports = router;
 // </IndexRouterSnippet>

@@ -15,6 +15,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const calendarRouter = require('./routes/calendar');
+const when2MeetRouter = require('./routes/when2Meet');
 
 const app = express();
 
@@ -107,7 +108,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
 app.use('/calendar', calendarRouter);
+app.use('/when2Meet', when2MeetRouter);
 app.use('/users', usersRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -49,6 +49,11 @@ router.get('/',
 
         // Assign the events to the view parameters
         params.events = events.value;
+        // params = {
+        //   events: events.value,
+        //   name: 'darren'
+        // }
+        // console.log(events.value); 
       } catch (err) {
         req.flash('error_msg', {
           message: 'Could not fetch events',
