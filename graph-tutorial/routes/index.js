@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
 // <PostEventFormSnippet>
 /* POST /index */
 router.post('/', function(req, res) {
-    
+    res.render('when2meet'); 
 });
 
 

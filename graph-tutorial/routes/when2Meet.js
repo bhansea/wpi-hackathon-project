@@ -1,5 +1,3 @@
-
-
 const router = require('express-promise-router')();
 const graph = require('../graph.js');
 const addDays = require('date-fns/addDays');
