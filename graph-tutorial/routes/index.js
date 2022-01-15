@@ -17,7 +17,10 @@ router.get('/', function(req, res, next) {
 // <PostEventFormSnippet>
 /* POST /index */
 router.post('/', function(req, res) {
-    res.render('when2meet', {name: "this is my event name"}); 
+    const name = {
+      input: req.body['when2Meet-name']
+    }; 
+    res.render('when2meet', {name: req.body['when2Meet-name']}); 
 });
 
 
