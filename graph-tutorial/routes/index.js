@@ -62,8 +62,9 @@ async function(req, res) {
       // events.value.forEach(element => 
       //   db.createEvent({name: 'please work 4', start: '2022-01-25 03:00:00', end: '2022-01-25 05:00:00'})); 
 
+      //takes outlook events and puts them into the database
       events.value.forEach(element => db.createEvent({name: element.subject, start: element.start.dateTime, end: element.end.dateTime})); 
-      
+
 
     } catch (err) {
       req.flash('error_msg', {
