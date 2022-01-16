@@ -6,7 +6,7 @@ const config = {
     connectionString: process.env.CONNECTION_STRING,
     ssl: {
         rejectUnauthorized: false,
-        ca: fs.readFileSync(process.env.HOME + '/.postgresql/root.crt').toString()
+        ca: fs.readFileSync(process.env.HOME + '/AppData/Roaming/.postgresql/root.crt').toString()
     }
 }
 
