@@ -1,165 +1,439 @@
 <style>
     table, th, td {
         border:1px solid black;
+        background-color: #ffffff;
     }
-    td.cellAction { background-color:#ffffff; }
-    td.cellAction:hover { background-color:#000000; }
-    
+    table.clear {border:1px black;
+                 background-color:transparent;}
+    td.clear {border:1px;
+              font-size:smaller;
+              background-color:transparent;}
+    td.groupCellAct { background-color:#ffffff; }
+    td.groupCellAct:hover { background-color:#000000; }
+    div#GridLayout {
+        float:left;
+        height:500px;
+        width:33.33%;
+    }
+    div#GridTitle {
+        position:relative;
+        top:10px;
+        height:5%;
+        width:90%;
+        margin:auto;
+    }
+    div#Grid {
+        position:relative;
+        top:75px;
+        left:25px;
+    }
+    div#Time1 {
+        background-color:transparent;
+        position:relative;
+        bottom:270px;
+        right:30px;
+        height:0px;
+        width:0px;
+    }
+    div#Time2 {
+        background-color:transparent;
+        position:relative;
+        top:5px;
+        height:0px;
+        width:0px;
+    }
+    div#Time3 {
+        background-color:transparent;
+        position:relative;
+        top:8px;
+        height:0px;
+        width:0px;
+    }
 </style>
 
 <!-- <IndexSnippet> -->
-<div class="p-5 mb-4 bg-light rounded-3">
-  <div class="container-fluid py-5">
-    <h1 class="display-5 fw-bold">{{this.name}}</h1>
-    <p class="lead">Group's Availability</p>
+    <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+    <h1>YUH</h1>
+    <br>
+    <div id="GridLayout" style="border:0px">
+        <div id="GridTitle">
+        <h4 style="text-align:center;">{{user.displayName}}'s Availability</h4>
+        </div>
+        <div id="Grid">
+            <table border="2" cellpadding="10" cellspacing="0" style="width:25%">
+                 <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                </tr>
+                <tr>
+                        <td onclick="this.style.backgroundColor = 'Red'"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+            </table>
+        </div>
+        {{!-- <div id="Times">
+            <table class="clear" cellpadding="10">
+                <tr></tr>
+                    <td class="clear">9:00AM</td>
+                <tr></tr>
+                    <td class="clear">10:00AM</td>
+                <tr></tr>
+                    <td class="clear">11:00AM</td>
+                <tr></tr>
+                    <td class="clear">12:00PM</td>
+                <tr></tr>
+                    <td class="clear">1:00PM</td>
+                <tr></tr>
+                    <td class="clear">2:00PM</td>
+                <tr></tr>
+                    <td class="clear">3:00PM</td>
+                <tr></tr>
+                    <td class="clear">4:00PM</td>
+                <tr></tr>
+                    <td class="clear">5:00PM</td>
+            </table>
+        </div> --}}
+        <div id="Time1">
+            <p style="font-size:80%;">9:00AM</p>
+            <div id="Time2">
+                <p style="font-size:80%;">10:00AM</p>
+                <div id="Time2">
+                    <p style="font-size:80%;">11:00AM</p>
+                    <div id="Time2">
+                        <p style="font-size:80%;">12:00PM</p>
+                        <div id="Time2">
+                            <p style="font-size:80%;">1:00PM</p>
+                            <div id="Time3">
+                                <p style="font-size:80%;">2:00PM</p>
+                                <div id="Time3">
+                                    <p style="font-size:80%;">3:00PM</p>
+                                    <div id="Time3">
+                                        <p style="font-size:80%;">4:00PM</p>
+                                        <div id="Time3">
+                                            <p style="font-size:80%;">5:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="GridLayout" style="border:0px;">
 
-    <table border = "2" cellpadding = "10" cellspacing = "0" style = "width:25%">
-        <tr>
-            <th>Sun</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        <tr>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-            <td class="cellAction"></td>
-        </tr>
-        
-    </table>
+    </div>
+    <div id="GridLayout" style="border:0px;">
+        <div id="GridTitle">
+        <h4 style="text-align:center;">Group Availability</h4>
+        </div>
+        <div id="Grid">
+            <table border="2" cellpadding="10" style="width:25%">
+                 <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+                <tr>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                        <td class="groupCellAct"></td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
 
+  </div>
   </div>
 <!-- </IndexSnippet> -->
