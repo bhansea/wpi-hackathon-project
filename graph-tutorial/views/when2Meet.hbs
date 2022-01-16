@@ -1,7 +1,7 @@
 <style>
     table, th, td {
         border:1px solid black;
-        background-color: #ffffff;
+        background-color:white;
     }
     table.clear {border:1px black;
                  background-color:transparent;}
@@ -21,6 +21,18 @@
         height:5%;
         width:90%;
         margin:auto;
+    }
+    {{!-- div#GridHeader {
+        position:relative;
+        top:5px;
+        height:100%;
+        width:100%;
+        background-color: blue;
+    } --}}
+    div#HeaderElement {
+        float:left;
+        height:20px;
+        width:25%;
     }
     div#Grid {
         position:relative;
@@ -46,19 +58,32 @@
         background-color:transparent;
         position:relative;
         top:8px;
-        height:0px;
-        width:0px;
+        height:5px;
+        width:5px;
     }
 </style>
 
 <!-- <IndexSnippet> -->
     <div class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5">
-    <h1>YUH</h1>
+    <h1>{{this.name}}</h1>
     <br>
     <div id="GridLayout" style="border:0px">
         <div id="GridTitle">
-        <h4 style="text-align:center;">{{user.displayName}}'s Availability</h4>
+            <h4 style="text-align:center;">{{user.displayName}}'s Availability</h4>
+            <div id="GridHeader">
+                {{!-- <div id="HeaderElement">
+                    <p>Available</p>
+                </div>
+                <div id="HeaderElement">
+                    
+                </div>
+                <table>
+                    <tr>
+                        <td style="background-color: lime; position:relative; top:10px; left:10px;"></td>
+                    </tr>
+                </table> --}}
+            </div>
         </div>
         <div id="Grid">
             <table border="2" cellpadding="10" cellspacing="0" style="width:25%">
@@ -72,173 +97,151 @@
                 <th>Sat</th>
                 </tr>
                 <tr>
-                        <td onclick="this.style.backgroundColor = 'Red'"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor = 'Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
                 <tr>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
-                        <td class="groupCellAct"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
+                        <td onclick="this.style.backgroundColor='Lime'"></td>
                 </tr>
             </table>
         </div>
-        {{!-- <div id="Times">
-            <table class="clear" cellpadding="10">
-                <tr></tr>
-                    <td class="clear">9:00AM</td>
-                <tr></tr>
-                    <td class="clear">10:00AM</td>
-                <tr></tr>
-                    <td class="clear">11:00AM</td>
-                <tr></tr>
-                    <td class="clear">12:00PM</td>
-                <tr></tr>
-                    <td class="clear">1:00PM</td>
-                <tr></tr>
-                    <td class="clear">2:00PM</td>
-                <tr></tr>
-                    <td class="clear">3:00PM</td>
-                <tr></tr>
-                    <td class="clear">4:00PM</td>
-                <tr></tr>
-                    <td class="clear">5:00PM</td>
-            </table>
-        </div> --}}
         <div id="Time1">
             <p style="font-size:80%;">9:00AM</p>
             <div id="Time2">
